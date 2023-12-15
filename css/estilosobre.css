@@ -1,0 +1,471 @@
+/*CSS UNIVERSAL PARA TODA A PÁGINA*/
+body {
+    background-color: rgb(68, 68, 66);
+
+    font-weight: bold;
+}
+* {
+    margin: 0 auto;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*CSS DO MENU HORIZONTAL*/
+#menu-h {
+    background-color: rgb(55, 53, 48);
+}
+#menu-h ul {
+
+    max-width: 100%;
+
+    list-style: none;
+
+    padding: 0;
+}
+#menu-h ul li {
+
+    display: inline;
+
+    border-right: 1px solid rgb(248, 248, 248);
+
+}
+#menu-h ul li a {
+    color: rgb(255, 252, 252);
+
+    padding: 15px;
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    transition:background .8s;
+}
+
+/*passar o mouse e mudar de cor*/
+li a:hover {
+
+    background-color: rgb(147, 147, 148);
+
+}
+
+/*faz com que o "Entrar" flutue para a direita*/
+#menu-h ul li:last-child a{
+
+    float:right;
+
+    background-color: rgb(223, 151, 70);
+
+    color: rgb(255, 255, 255);
+
+}
+
+body,html {
+    height: 100%;
+}
+
+
+
+/*CSS CARDS*/
+body {  
+
+    font-family: "Poppins", sans-serif;
+
+    background-color:rgb(242, 249, 255) ;
+
+}
+.row {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 85%;
+
+}
+.card {
+    background-color: #ffffff;
+    border-radius: 5px;
+
+    box-shadow: 7px 7px 13px 0px rgba(26, 32, 109, 0.22);
+
+    padding: 40px;
+
+    margin: 20px;
+
+    width: 400px;
+
+    transition: all 0.3s ease-out;
+
+    color: rgb(60, 46, 71);
+
+}
+.card:hover {
+    transform: translateY(-10px);
+
+    cursor:pointer;
+}
+
+/* css do que está escrito dentro dos cards */
+.card p {
+    color:rgb(73, 65, 56);
+
+    font-size: 16px;
+}
+
+/* css das bordas dos cards */
+.blue {
+    border-bottom: 3px solid blue;
+}
+.green {
+
+    border-bottom: 3px solid blue;
+
+}
+.orange {
+    border-bottom: 3px solid blue;
+}
+
+
+
+
+/*CSS DA BARRA DE PESQUISA */
+.search-item {
+    display: flex;
+
+    align-items: center;
+
+    float: center;
+}
+.search-input {
+    padding: 9px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    width: 40%;
+
+    float: left;
+
+}
+
+
+
+/*CSS DO RODAPÉ - FOOTER*/
+.rodape {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    background-color: rgb(214, 209, 209);
+    color: #757572;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+}
+
+
+/*CSS DO LOGO/Icone QUE FICA NO RODAPÉ*/
+#logo{
+    position: absolute;
+    width:110px;
+    transform: translateY(-7px);
+}
+/*CSS DOS CONTATOS que ficam dentro do rodapé */
+.contatos {
+
+    color:rgb(0, 0, 0);
+
+    font-weight: bold;
+
+}
+
+
+
+
+/*CSS DO INFINITYSTORE - LOGO*/
+#infinityStore {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    background: -webkit-linear-gradient(#0400ff, #ea00ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+/*MENU SANDWICH*/
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////*/
+/*MEDIA QUERY PARA TELA DE 600*/
+@media (max-width: 600px) {
+body {
+    background-color: #dddddd;
+}
+
+
+
+    /* media query dos cards */
+    .row {
+        display: block;
+        width: 81%;
+    }
+
+.card {
+    padding: 10px;
+    margin: 10px;
+    width: 50;
+    height: 250px;
+    transition: all 0.3s ease-out;
+    display: block;
+    max-height: 200px;
+    margin-top: auto;
+}
+
+
+/* media query menu horizontal */
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: hwb(30 25% 11% / 0.822);
+    color: #fffcf6;
+
+}
+#menu-h ul {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+#menu-h {
+    width: 100%;
+    display: none;
+}
+#menu-promo  {
+    text-align: center;
+    color:black;
+}
+
+
+/* Media query para Menu Sandwich */
+.mobile-menu-icon{
+    display: block;
+}
+.mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    list-style: none;
+background-color: #c9c9c9;
+}
+.mobile-menu ul li a {
+    color: rgb(3, 3, 3);
+
+    padding: 15px;
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    transition:background .8s;
+}
+
+
+.mobile-menu .menu-h {
+    display: block;
+    padding-top: 1.2rem;
+    
+}
+
+.open {
+    display: block;
+}
+
+
+
+.mobile-menu .search-item{
+    display: flex;
+    align-items: center;
+    float: center;
+    padding: 1px;
+}
+.mobile-menu .search-input{
+    padding: 2px;
+
+    border: 1px solid #ccc;
+    
+        border-radius: 5px;
+    
+        width: 40%;
+    
+        float: left;
+}
+
+.mobile-menu ul li:last-child a{
+    
+    float:right;
+
+    background-color: rgb(223, 151, 70);
+
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+/*Media query barra pesquisa*/
+    .search-item{
+        display: flex;
+        align-items: center;
+        float: center;
+        padding: 1px;
+        display:none;
+    
+        .search-input{
+    padding: 6px;
+    
+    border: 1px solid #ccc;
+        
+    border-radius: 5px;
+        
+    width: 40%;
+        
+    float: left;
+        }
+    }
+
+    /*Media query RODAPÉ */
+    .rodape{
+        background-color: rgb(214, 209, 209);
+        color:#4e4e4d;
+        padding: 47px;
+        margin: 0;
+        display: flex;
+        position: relative;
+        grid-template-columns: repeat(3 200px);
+    }
+    
+    #logo {
+        position: absolute;
+        width:67px;
+        transform: translateY(-7px);
+    }
+    
+    .contatos{
+        color:rgb(0, 0, 0);
+        font-weight: bold;
+    
+    }
+}
+
+
+@media (max-width: 500px) {
+  /* media query dos cards */
+  .row {
+    display: block;
+    width: 90%;
+}
+}
+
+/* //////////////////////////////////////////*/
+/*MEDIA QUERY PARA TELA DE 496 (Celular)*/
+@media (max-width: 438px) {
+
+    .row {
+        display: block;
+        width:100%;
+    }
+    
+
+    .card{
+        border-radius: 5px;
+        box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+        padding: 30px;  
+        margin: 20px;
+        width: 390px;
+        transition: all 0.3s ease-out;
+        background-color: #ffffff;
+    }
+
+
+
+
+
+  
+
+        /* media query rodapé */
+.rodape{
+    background-color: rgb(214, 209, 209);
+    color:#4e4e4d;
+    font-size: small;
+    padding-top: 75px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    grid-template-columns: repeat(3 200px);
+    width: 100%;
+    justify-content: center;
+}
+
+#logo {
+    position:absolute;
+    margin-top: -38px;
+    width:60px;
+    transform: translateY(-25px);
+}
+
+.contatos{
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+
+}
+
+.last{
+    margin-bottom: 200px;
+}
+    }
+    
+
+    
+
+
+    
