@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estiloprodutos.css">
+    <title>Produtos</title>
+
+</head>
+<body>
+
+    <!--MENU HORIZONTAL / onde navegamos pelo site--> 
+    <header class="header">
+
+        <div id="menu-h">
+            <ul>
+                <li>
+                    <a id="infinityStore" href="index.html">InfinityStore</a>
+                </li>
+                <li>
+                    <a href="produtos.html">Produtos</a>
+
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="login.html">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    
+
+
+
+    <!--Menu hamburguer para celular-->
+    <div class="mobile-menu-icon">
+        <button id="menu" onclick="menuShow()"><img class="icon" src="img/menu.png" alt="botao"></button>
+    </div>
+    <div class="mobile-menu">
+        <!--Barra de pesquisa para celular-->
+     <div class="search-item">
+        <input type="search" class="search-input" placeholder="Pesquisar">
+    </div>
+
+        <ul>
+            <li>
+                <a id="infinityStore" href="index.html">InfinityStore</a>
+            </li>
+            <li>
+                <a href="produtos.html">Produtos</a>
+            </li>
+            <li>
+                <a href="sobre.html">Sobre</a>
+            </li>
+            <li>
+                <a href="galeria.html">Galeria</a>
+            </li>
+            <li>
+                <a href="login.html">Entrar</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<script src="js/menu.js"></script>
+
+
+
+
+
+
+    <!--BANNER PRINCIPAL-->
+    <div class="banner">
+
+        <!--BARRA DE PESQUISA-->
+        <div class="search-item">
+        <input type="search" class="search-input" placeholder="Pesquisar">
+        </div>
+    <br>
+    
+    </div>
+
+    <!--CONTEÚDO PRINCIPAL E BOTÕES PARA ENTRAR NAS CATEGORIAS-->
+    <div class="vrow">
+        <h1 class="produtoTitulo">Categorias:</h1>
+        <form><button id="hardware" type="submit" formaction="categorias/hardware.html">Hardware</button></form>
+        <form><button id="periferico" type="submit" formaction="categorias/periferico.html">Periféricos</button></form>
+        <form><button id="monitores"  type="submit" formaction="categorias/monitor.html">Monitor</button></form>
+    </div>
+<br>
+
+
+
+<!--Vai dar um espaço das categorias para o rodapé-->
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+    <!--RODAPÉ - FOOTER-->
+    <div class="rodape">
+        <img id="logo" src="img/logo.png" alt="">
+        <footer>
+            <div class="contatos">
+            <p>Entre Em Contato:</p>
+            </div>
+            <br>
+            Telefone: (19)99999-9999
+            <br>
+            Email: InfinityStore@gmail.com
+            <br>
+            Endereço: Av. da Saudade, 125 - Pte. Preta, Campinas - SP, 13041-670
+        </footer>
+    </div>
+
+</body>
+</html>
